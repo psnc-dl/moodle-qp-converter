@@ -55,7 +55,7 @@ public class DomHandlerTest {
         Node parent = testedHandler.getNodesWithName("page").item(0);
 
         //when
-        boolean result = testedHandler.checkIfNodeHaveChildren(parent);
+        boolean result = testedHandler.checkIfNodeHasChildren(parent);
 
         //then
         assertTrue(result);
@@ -67,7 +67,7 @@ public class DomHandlerTest {
         Node parent = testedHandler.getNodesWithName("branches").item(0);
 
         //when
-        boolean result = testedHandler.checkIfNodeHaveChildren(parent);
+        boolean result = testedHandler.checkIfNodeHasChildren(parent);
 
         //then
         assertFalse(result);

@@ -35,16 +35,16 @@ public class QuestionPageConverter {
 
     public Node processPage(Node questionPage, DomHandler domHandler) {
 
-        Node qtype = domHandler.getFirstChildNodeWithGivenName(questionPage, "qtype");
+        Node qtype = domHandler.getFirstChildNodeWithName(questionPage, "qtype");
         qtype.setTextContent("20");
 
-        Node layout = domHandler.getFirstChildNodeWithGivenName(questionPage, "layout");
+        Node layout = domHandler.getFirstChildNodeWithName(questionPage, "layout");
         layout.setTextContent("1");
 
-        Node display = domHandler.getFirstChildNodeWithGivenName(questionPage, "display");
+        Node display = domHandler.getFirstChildNodeWithName(questionPage, "display");
         display.setTextContent("1");
 
-        Node answers = domHandler.getFirstChildNodeWithGivenName(questionPage, "answers");
+        Node answers = domHandler.getFirstChildNodeWithName(questionPage, "answers");
         appendAnswersNode(answers);
 
         return questionPage;

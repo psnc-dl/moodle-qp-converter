@@ -16,10 +16,10 @@ public class QuestionPageSelector {
         for (int i = 0; i < pages.getLength(); i++) {
             Node page = pages.item(i);
 
-            Node answers = domHandler.getFirstChildNodeWithGivenName(page, "answers");
-            boolean answersNodeHaveChildren = domHandler.checkIfNodeHaveChildren(answers);
+            Node answers = domHandler.getFirstChildNodeWithName(page, "answers");
+            boolean answersNodeHaveChildren = domHandler.checkIfNodeHasChildren(answers);
 
-            Node qtype = domHandler.getFirstChildNodeWithGivenName(page, "qtype");
+            Node qtype = domHandler.getFirstChildNodeWithName(page, "qtype");
             boolean hasCorrectQType = domHandler.checkIfNodeHasGivenContent(qtype, "3");
 
             if (hasCorrectQType && !answersNodeHaveChildren) {

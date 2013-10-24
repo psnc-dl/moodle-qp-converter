@@ -9,15 +9,17 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Document;
 
 public class LessonOutput {
 
     public static void saveOutput(Document document, File file) {
+        FileOutputStream outputStream = null;
         try {
             Transformer xformer = TransformerFactory.newInstance().newTransformer();
-            FileOutputStream fos = new FileOutputStream(file);
-            Result result = new StreamResult(fos);
+            outputStream = new FileOutputStream(file);
+            Result result = new StreamResult(outputStream);
             Source source = new DOMSource(document);
 
             xformer.setOutputProperty(
@@ -27,6 +29,8 @@ public class LessonOutput {
             xformer.transform(source, result);
         } catch (Exception e) {
             throw new LessonSavingException(e);
+        } finally {
+            IOUtils.closeQuietly(outputStream);
         }
 
     }

@@ -39,7 +39,7 @@ public class QuestionPageConverterTest {
         converter.processPage(questionPage, handler);
         
         //then
-        Node qtype = handler.getFirstChildNodeWithGivenName(questionPage, "qtype");
+        Node qtype = handler.getFirstChildNodeWithName(questionPage, "qtype");
         assertTrue(handler.checkIfNodeHasGivenContent(qtype, "20"));
     }
     
@@ -52,7 +52,7 @@ public class QuestionPageConverterTest {
         converter.processPage(questionPage, handler);
         
         //then
-        Node layout = handler.getFirstChildNodeWithGivenName(questionPage, "layout");
+        Node layout = handler.getFirstChildNodeWithName(questionPage, "layout");
         assertTrue(handler.checkIfNodeHasGivenContent(layout, "1"));
     }
     
@@ -65,7 +65,7 @@ public class QuestionPageConverterTest {
         converter.processPage(questionPage, handler);
         
         //then
-        Node display = handler.getFirstChildNodeWithGivenName(questionPage, "display");
+        Node display = handler.getFirstChildNodeWithName(questionPage, "display");
         assertTrue(handler.checkIfNodeHasGivenContent(display, "1"));
     }
     
@@ -78,8 +78,8 @@ public class QuestionPageConverterTest {
         converter.processPage(questionPage, handler);
 
         //then
-        Node answers = handler.getFirstChildNodeWithGivenName(questionPage, "answers");
-        assertTrue(handler.checkIfNodeHaveChildren(answers));
+        Node answers = handler.getFirstChildNodeWithName(questionPage, "answers");
+        assertTrue(handler.checkIfNodeHasChildren(answers));
     }
     
     @Test
@@ -94,7 +94,7 @@ public class QuestionPageConverterTest {
         NodeList convertedAnswersNode = handler.getNodesWithName("answers");
         for (int i=0; i<convertedAnswersNode.getLength();i++) {
             Node answers = convertedAnswersNode.item(i);
-            Boolean result = Boolean.valueOf(handler.checkIfNodeHaveChildren(answers));
+            Boolean result = Boolean.valueOf(handler.checkIfNodeHasChildren(answers));
             assertThat(result, is(Boolean.TRUE));
         }
         

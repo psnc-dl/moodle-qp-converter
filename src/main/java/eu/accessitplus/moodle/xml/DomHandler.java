@@ -19,7 +19,7 @@ public class DomHandler {
         return document.getElementsByTagName(nodeName);
     }
 
-    public Node getFirstChildNodeWithGivenName(Node parent, String childName) {
+    public Node getFirstChildNodeWithName(Node parent, String childName) {
         return getChildNodesWithGivenName(parent, childName).get(0);
     }
 
@@ -35,7 +35,7 @@ public class DomHandler {
         return nodes;
     }
 
-    public boolean checkIfNodeHaveChildren(Node givenNode) {
+    public boolean checkIfNodeHasChildren(Node givenNode) {
         NodeList answersSubnodes = givenNode.getChildNodes();
         if (answersSubnodes.getLength() == 0) {
             return false;
