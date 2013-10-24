@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>eu.accessitplus</groupId>
     <artifactId>question-page-converter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0.Final</version>
     <name>Question Page Converter</name>
     <description>
       Tool which does the batch conversion of moodle course dumps. It converts Question Pages 
