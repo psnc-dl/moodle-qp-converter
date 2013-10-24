@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<course id="5" contextid="1096">
+  <shortname>QPC</shortname>
+  <fullname>QuestionPageCourse</fullname>
+  <idnumber></idnumber>
+  <summary>QPC import test</summary>
+  <summaryformat>1</summaryformat>
+  <format>topics</format>
+  <showgrades>1</showgrades>
+  <newsitems>5</newsitems>
+  <startdate>1381356000</startdate>
+  <marker>0</marker>
+  <maxbytes>2097152</maxbytes>
+  <legacyfiles>2</legacyfiles>
+  <showreports>0</showreports>
+  <visible>1</visible>
+  <groupmode>0</groupmode>
+  <groupmodeforce>0</groupmodeforce>
+  <defaultgroupingid>0</defaultgroupingid>
+  <lang></lang>
+  <theme></theme>
+  <timecreated>1381307683</timecreated>
+  <timemodified>1381307683</timemodified>
+  <requested>0</requested>
+  <enablecompletion>0</enablecompletion>
+  <completionstartonenrol>0</completionstartonenrol>
+  <completionnotify>0</completionnotify>
+  <numsections>2</numsections>
+  <hiddensections>0</hiddensections>
+  <coursedisplay>0</coursedisplay>
+  <category id="1">
+    <name>Miscellaneous</name>
+    <description>$@NULL@$</description>
+  </category>
+  <tags>
+  </tags>
+</course>

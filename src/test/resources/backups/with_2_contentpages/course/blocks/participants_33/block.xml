@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<block id="33" contextid="1097" version="2012112900">
+  <blockname>participants</blockname>
+  <parentcontextid>1096</parentcontextid>
+  <showinsubcontexts>0</showinsubcontexts>
+  <pagetypepattern>course-view-*</pagetypepattern>
+  <subpagepattern>$@NULL@$</subpagepattern>
+  <defaultregion>side-pre</defaultregion>
+  <defaultweight>0</defaultweight>
+  <configdata>Tjs=</configdata>
+  <block_positions>
+    <block_position id="25">
+      <contextid>1096</contextid>
+      <pagetype>course-view</pagetype>
+      <subpage></subpage>
+      <visible>1</visible>
+      <region>side-pre</region>
+      <weight>0</weight>
+    </block_position>
+  </block_positions>
+</block>
